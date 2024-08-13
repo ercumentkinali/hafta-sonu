@@ -4,6 +4,6 @@
 
 @section('content')
     @include('master.parts.logo')
-    @include('index.main')
+    @include('news.news')
 
 @endsection

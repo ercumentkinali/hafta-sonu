@@ -5,10 +5,11 @@
     @include('master.parts.head')
 </head>
 
-<body>
-    {{-- @extends('master.parts.mega-menu') --}}
+<body class=" bg-arkaplan w-full h-full absolute">
+    <div class="relative w-full h-full">
     @yield('content')
     @include('master.parts.foot')
+    </div>
 </body>
 
 </html>

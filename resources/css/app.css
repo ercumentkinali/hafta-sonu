@@ -1,0 +1,11 @@
+@import 'swiper/css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    box-sizing:border-box;
+}
+.news-swiper {
+    background-color: #FFF8EA; /* Slayt arka plan rengini buraya girin */
+  }

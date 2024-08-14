@@ -7,5 +7,45 @@
     box-sizing:border-box;
 }
 .news-swiper {
-    background-color: #FFF8EA; /* Slayt arka plan rengini buraya girin */
+    background-color: #FFF8EA;
+}
+
+/* .swiper-pagination-bullet {
+    background-color: red;
+    width: 10%;
+    height: 1rem;
+    display: inline-block;
+} */
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center; /* Pagination'ı ortalar */
+    margin-top: 2rem; /* Pagination ile slider arasındaki boşluk */
+}
+
+  .swiper-pagination-bullet {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #333; /* Bullet rengi */
+    border-radius: 0.5rem; /* Kısmi yuvarlak köşeler */
+    position: relative;
+    margin:  1rem; /* Bullet'lar arasındaki boşluk */
+    opacity: 0.5;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #000000; /* Aktif bullet rengi */
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg); /* Elmas şeklinde döndürme */
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #333; /* Arka plan rengi */
+    z-index: -1; /* İçerikten arka planda olacak */
   }

@@ -1,4 +1,4 @@
-<div class="swiper-slide w-[380px] h-[640px] relative px-4 py-10 before:content-['*'] before:absolute before:right-0 before:top-0 before:bottom-0 before:m-auto before:z-20 before:w-8 before:h-px before:bg-red-600">
+<div class="swiper-slide w-80 h-132 relative px-4 py-10">
     <div class="relative z-10 w-full h-full flex items-center justify-center text-center bg-white p-8">
         <div class="flex flex-col justify-center items-center">
             <div class="border-b-2 border-black w-1/2 mb-2">
@@ -27,8 +27,8 @@
             {{ $order ?? '' }}
         </span>
     </div>
-    <div class="z-20 w-8 h-px bg-black absolute right-0 top-0 bottom-0 m-auto"></div>
-    <div class="z-20 w-8 h-px bg-black absolute left-0 top-0 bottom-0 m-auto"></div>
+    <div class="z-20 w-5 h-px bg-line absolute right-0 top-0 bottom-0 m-auto"></div>
+    <div class="z-20 w-5 h-px bg-line absolute left-0 top-0 bottom-0 m-auto"></div>
 </div>
 
 

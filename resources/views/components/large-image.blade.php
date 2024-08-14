@@ -1,4 +1,4 @@
-<div class="swiper-slide w-80 h-132 relative px-4 py-10">
+<div class="swiper-slide w-37rem h-132 relative px-4 py-10 before:content-[''] before:absolute before:right-0 before:top-0 before:bottom-0 before:m-auto before:z-20 before:w-8 before:h-px before:bg-red-600">
     <div class="relative z-10 w-full h-full">
         <img src="{{ $image ?? '' }}" alt="haberjpg" class="absolute inset-0 w-full h-full object-cover z-0">
 
@@ -28,4 +28,7 @@
     <div class="z-20 w-5 h-px bg-line absolute right-0 top-0 bottom-0 m-auto"></div>
     <div class="z-20 w-5 h-px bg-line absolute left-0 top-0 bottom-0 m-auto"></div>
 </div>
+
+
+
 

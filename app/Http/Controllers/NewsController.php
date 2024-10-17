@@ -12,4 +12,9 @@ class NewsController extends Controller
         $news = News::all();
         return view('news.default', compact('news'));
     }
+    public function index()
+    {
+        $news = News::all(); // Haber verilerini alır
+        return view('index.default', ['news' => $news]); // Ana ekran view dosyasını ve haberleri döndürür
+    }
 }

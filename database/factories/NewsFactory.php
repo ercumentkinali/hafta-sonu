@@ -15,7 +15,7 @@ class NewsFactory extends Factory
 
     public function definition()
     {
-        $dataTypes = ['full_content', 'full_image', 'no_image','reklam'];
+        $dataTypes = ['full_content', 'full_image', 'no_image','reklam','full_reklam'];
         $category = Category::inRandomOrder()->first();
         $images = glob(public_path('images/fake') . '/*.jpg');
         $image_url = basename($images[array_rand($images)]);

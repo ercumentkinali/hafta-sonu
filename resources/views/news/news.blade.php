@@ -1,4 +1,4 @@
-<div class="relative w-full">
+<div id="newsScreen" class="relative w-full">
     <div class=" w-full bg-arkaplan flex-col">
         <div class="news-swiper swiper relative w-full h-auto">
             <div class="swiper-wrapper">
@@ -39,6 +39,11 @@
                             <x-slot name="title">{{ $new->title }}</x-slot>
                             <x-slot name="order">{{ str_pad($key + 1, 2, '0', STR_PAD_LEFT) }}</x-slot>
                         </x-large-image>
+                    @elseif ($new->data_type === 'full_reklam')
+                        <x-full-reklam>
+                            <x-slot name="image">/{{ $new->image_url }}</x-slot>
+                            <x-slot name="order">{{ str_pad($key + 1, 2, '0', STR_PAD_LEFT) }}</x-slot>
+                        </x-full-reklam>
                     @endif
                 @endforeach
             </div>

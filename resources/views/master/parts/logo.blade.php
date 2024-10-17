@@ -8,7 +8,7 @@
     <div class="right-icon">
         <div class="absolute w-16 h-16 top-8 right-0 mr-16">
             <a href="/">
-                <img src="{{ asset('images/ht-icon@2x.jpg') }}" alt="Right Icon">
+                <img src="{{ asset('images/ht-icon@2x.jpg') }}" id="showMainScreen" alt="Right Icon">
             </a>
         </div>
         <div class="absolute w-16 h-16 top-10 -right-4 ">

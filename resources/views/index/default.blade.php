@@ -6,4 +6,5 @@
     @include('master.parts.logo')
     @include('index.main')
 
+
 @endsection

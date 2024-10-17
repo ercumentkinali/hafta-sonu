@@ -9,32 +9,24 @@
 .news-swiper {
     background-color: #FFF8EA;
 }
-
-/* .swiper-pagination-bullet {
-    background-color: red;
-    width: 10%;
-    height: 1rem;
-    display: inline-block;
-} */
-
 .swiper-pagination {
     display: flex;
-    justify-content: center; /* Pagination'ı ortalar */
-    margin-top: 2rem; /* Pagination ile slider arasındaki boşluk */
+    justify-content: center;
+    margin-top: 2rem;
 }
 
   .swiper-pagination-bullet {
     width: 0.5rem;
     height: 0.5rem;
-    background-color: #333; /* Bullet rengi */
-    border-radius: 0.5rem; /* Kısmi yuvarlak köşeler */
+    background-color: #333;
+    border-radius: 0.5rem;
     position: relative;
-    margin:  1rem; /* Bullet'lar arasındaki boşluk */
+    margin:  1rem;
     opacity: 0.5;
   }
 
   .swiper-pagination-bullet-active {
-    background-color: #000000; /* Aktif bullet rengi */
+    background-color: #000000;
     opacity: 1;
   }
 
@@ -43,9 +35,95 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg); /* Elmas şeklinde döndürme */
+    transform: translate(-50%, -50%) rotate(45deg);
     width: 0.5rem;
     height: 0.5rem;
-    background-color: #333; /* Arka plan rengi */
-    z-index: -1; /* İçerikten arka planda olacak */
+    background-color: #333;
+    z-index: -1;
   }
+  .slide-in-right {
+    animation: slide-in-right 0.5s forwards;
+}
+
+.slide-out-left {
+    animation: slide-out-left 0.5s forwards;
+}
+
+.slide-in-left {
+    animation: slide-in-left 0.5s forwards;
+}
+
+.slide-out-right {
+    animation: slide-out-right 0.5s forwards;
+}
+
+@keyframes slide-in-right {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-out-left {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-out-right {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+.spiral-background svg {
+    opacity: 0.3;
+    mix-blend-mode: multiply;
+
+}
+
+.main-icon {
+    z-index: 10;
+}
+.slide-enter {
+    transform: translateX(100%);
+    opacity: 0;
+}
+.slide-enter-active {
+    transition: all 0.5s ease;
+    transform: translateX(0);
+    opacity: 1;
+}
+.slide-leave {
+    transform: translateX(0);
+    opacity: 1;
+}
+.slide-leave-active {
+    transition: all 0.5s ease;
+    transform: translateX(-100%);
+    opacity: 0;
+}
